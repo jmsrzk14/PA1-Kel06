@@ -19,7 +19,14 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->enum('role', ['admin', 'pelanggan'])->default('pelanggan');
+            $table->string('role');
+            $table->string('tempatLahir')->nullable();
+            $table->date('tanggalLahir')->nullable();
+            $table->string('jenisKelamin')->nullable();
+            $table->string('agama')->nullable();
+            $table->string('alamat')->nullable();
+            $table->string('noTelp')->nullable();
+            $table->string('foto')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

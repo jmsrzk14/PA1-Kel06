@@ -22,4 +22,5 @@ class Reservation extends Model
         'jumlah_anggota',
         'status'
     ];
+    
 }
