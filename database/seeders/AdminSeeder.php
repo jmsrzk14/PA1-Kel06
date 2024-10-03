@@ -17,9 +17,9 @@ class AdminSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         DB::table('users')->insert([
-            'id'=> '1',
+            'id'=> '6',
             'name' => 'James Frans Rizky Tambunan',
-            'email'=> 'jmsrizky123@gmail.com',
+            'email'=> 'james123@gmail.com',
             'password'=> Hash::make('james123'),
             'role'=> 'owner',
         ]);
